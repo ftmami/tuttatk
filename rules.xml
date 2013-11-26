@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
+       xmlns:xi="http://www.w3.org/2001/XInclude"
+       css:if-content="#visual-portal-wrapper">
+
+  <!-- The condition makes sure that theme is only applied when served in the 
+       plone main_template. This is necessary for functional edit popups in 
+       Tiny, for example. -->
+  <theme href="examples/starter-template.html"/>
+
+  <!-- Head rules
+       ================================================================== -->
+  <xi:include href="rules/head-base.xml"/>
+  <xi:include href="rules/head-theme.xml"/>
+
+  <!-- Body rules
+       ================================================================== -->
+  <xi:include href="rules/header-narrow.xml"/>
+  <xi:include href="rules/grid.xml"/>
+  <xi:include href="rules/columns.xml"/>
+  <xi:include href="rules/lead.xml"/>
+  <xi:include href="rules/content.xml"/>
+  <xi:include href="rules/forms.xml"/>
+  <xi:include href="rules/portlets.xml"/>
+  <xi:include href="rules/edit.xml"/>
+  <xi:include href="rules/footer.xml"/>
+  <xi:include href="rules/general.xml"/>
+
+
+<after css:theme="#portal-colophon" css:content=".colophonWrapper"  /> 
+  <!-- Place the content 
+       .................................................................. -->
+  <drop css:theme-children="body"/>
+  <before css:theme-children="body" css:content-children="body"/>
+  <after css:theme-children="body">
+      <script src="/++theme++tuttatk/js/bootstrap.min.js"></script>
+      <script src="/++theme++tuttatk/js/jquery.vegas.js"></script>
+      <script src="/++theme++tuttatk/css/galleria-theme/galleria.cover_theme.js"></script>
+      
+      <script>
+    $(document).ready(function($){
+    	  var duImagePathBase = '/++theme++tuttatk/img/generic-backgrounds/';
+		  var duImageOptions = new Array(9);
+			duImageOptions[0] = '02a.jpg';
+			duImageOptions[1] = '02a.jpg';
+			duImageOptions[2] = '02a.jpg';
+			duImageOptions[3] = '02a.jpg';
+			duImageOptions[4] = '08a.jpg';
+			duImageOptions[5] = '07a.jpg';
+			duImageOptions[6] = '07a.jpg';
+			duImageOptions[7] = '08a.jpg';
+            duImageOptions[8] = '08a.jpg';
+
+		  function randomImage() {
+			index = Math.floor(Math.random() * duImageOptions.length);
+			return(duImageOptions[index])
+		  }
+		  var duImageUrl = duImagePathBase + randomImage();
+		  jQuery.vegas({
+		    src: duImageUrl
+		  });
+	  });
+	</script>
+  </after>
+  
+</rules>

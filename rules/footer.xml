@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+         xmlns:css="http://namespaces.plone.org/diazo/css"
+         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <replace css:content="#portal-footer-wrapper">
+      <footer id="portal-footer-wrapper">
+          <div class="du-footer">
+  <div class="du-footer-content">
+    <!-- BEGIN BOOTSTRAP-IZED FOOTER -->
+    <div class="container">
+      <div class="row">
+        <div class="row">
+  <div class="span3 footer">
+    <ul>
+      <li class="lead-in getting-started">О Колледже</li>
+      <li>
+        <a title="История автотранспортного колледжа" href="/about/history">
+          <span>История колледжа</span>
+        </a>
+      </li>
+      <li>
+        <a title="" href="/about/administraciya-i-prepodavateli">
+          <span>Администрация и преподаватели</span>
+        </a>
+      </li>
+      <li>
+        <a title="" href="/about/licenziya-akkreditaciya-i-pravovaya-informaciya">
+          <span>Лицензия, аккредитация и правовая информация</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="span3 footer wide">
+    <ul>
+      <li class="lead-in schools">Специальности</li>
+      <li>
+        <a target="_self" title="" href="/abiturientam/specialnosti/190701">Организация перевозок и управление на транспорте (по видам)</a>
+      </li>
+      <li>
+        <a target="_self" title="" href="/abiturientam/specialnosti/190631">Техническое обслуживание и ремонт автомобильного транспорта</a>
+      </li>
+      <li>
+        <a target="_self" title="" href="/abiturientam/specialnosti/190629">Техническая эксплуатация подъемно-транспортных, строительных, дорожных машин и оборудования (по отраслям)</a>
+      </li>
+      <li>
+        <a target="_self" title="" href="/abiturientam/specialnosti/080214">Операционная деятельность в логистике</a>
+      </li>
+       <li>
+        <a target="_self" title="" href="/abiturientam/specialnosti/080114">Экономика и бухгалтерский учет (по отраслям)</a>
+      </li>
+	  <li>
+        <a target="_self" title="" href="/abiturientam/specialnosti/030912">Право и организация социального обеспечения</a>
+      </li>
+	  <li>
+        <a target="_self" title="" href="/abiturientam/specialnosti/100701">Коммерция (по отраслям)</a>
+      </li>
+    </ul>
+  </div>
+  <div class="span3 footer">
+    <ul>
+      <li class="lead-in admissions">Общественное мнение</li>
+      <li>
+        <a title="" href="/obschestvennoe-mnenie/ocenka-raboty-prepodavatelei">
+          <span>Оценка работы преподавателей</span>
+        </a>
+      </li>
+      <li>
+        <a title="" href="/obschestvennoe-mnenie/question">
+          <span>Задать вопрос</span>
+        </a>
+      </li>
+      <li>
+        <a title="Опросы и анкеты" href="/obschestvennoe-mnenie/oprosy-i-ankety">
+          <span>Опросы и анкеты</span>
+        </a>
+      </li>
+      <li>
+        <a title="Анкета оценки удовлетворенности работодателя качеством подготовки выпускников филиала Университета машиностроения в п.Тучково" href="/obschestvennoe-mnenie/anketa-ocenki-udovletvorennosti-rabotodatelya-kachestvom-podgotovki-vypusknikov">
+          <span>Анкета оценки удовлетворенности работодателя качеством подготовки выпускников</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="span3 footer">
+    <ul>
+      <li class="lead-in resources">Контакты</li>
+      <li>
+        <a title="Контактная информация Филиала университета машиностроения в п.Тучково" href="/contacts/kontaktnaya-informaciya">
+          <span>Контактная информация</span>
+        </a>
+      </li>
+      <li>
+        <a title="Телефонный справочник" href="/contacts/telefonnyi-spravochnik">
+          <span>Телефонный справочник</span>
+        </a>
+      </li>
+      <li>
+        <a title="Схема проезда" href="/contacts/shema-proezda">
+          <span>Схема проезда</span>
+        </a>
+      </li>
+      <li>
+        <a title="" href="/contacts/raspisanie-avtobusov">
+          <span> Расписание автобусов от ст.Тучково и от ост.Техникум</span>
+        </a>
+      </li>
+      <li>
+        <a href="/contacts/bankovskie-rekvizity">
+          <span>Банковские реквизиты</span>
+        </a>
+      </li>
+      <li>
+        <a title="" href="/contacts/obratnaya-svyaz">
+          <span>Обратная связь</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p id="footer-text">
+            © Тучковский Автотранспортный Колледж   | ©  филиал Университета машиностроения МАМИ в п.Тучково   |   +7 (495) 992-89-33   |   info@tatk.ru   |   
+            
+            |   <a href="/sitemap">Карта Сайта</a>
+          </p>
+          <xsl:apply-templates select="./*"/>
+        </div>
+      </div>
+      <!-- END BOOTSTRAP-IZED FOOTER -->
+    </div>
+    <!-- END FOOTER DIVS -->
+  </div>
+</div>
+
+      </footer>
+  </replace>
+  
+  
+      
+  
+  <drop css:content="#portal-footer"/>
+  <drop css:content="#portal-siteactions"/>
+
+</rules>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+         xmlns:css="http://namespaces.plone.org/diazo/css"
+         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+         
+  <!-- Breadcrumbs -->
+  <drop css:content="#portal-breadcrumbs"/>
+  <replace css:content="#portal-breadcrumbs" method="raw" if-content="//*[@id='breadcrumbs-1']">
+    <ul class="breadcrumb">
+        <xsl:for-each select="./span[not(position() = last())]//a">
+            <li>
+                <xsl:apply-templates select="."/>
+                <span class="divider">/</span>
+            </li>
+        </xsl:for-each>
+        <li class="active">
+            <xsl:apply-templates select="./span[position() = last()]/*"/>
+        </li>
+    </ul>
+  </replace> 
+
+  <!-- Tiles -->
+  <replace css:content=".tileItem">
+      <div class="media">
+          <a class="pull-left">
+              <xsl:apply-templates select="./h2/a/@href"/>
+              <img> 
+                  <xsl:attribute name="class">media-object</xsl:attribute>
+                  <xsl:copy-of select="./a/div/img/@*" />
+              </img>
+          </a>
+          <div class="media-body">
+              <h4 class="media-heading">
+                  <xsl:apply-templates select="./h2/*"/>
+              </h4>
+              <p><xsl:apply-templates select="./p[contains(concat(' ', normalize-space(@class), ' '), ' tileBody ')]/*"/></p>
+          </div>
+      </div>
+  </replace>
+
+</rules>

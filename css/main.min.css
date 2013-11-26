@@ -1,0 +1,158 @@
+/*over ride bootstrap for vegas background images*/
+body img.vegas-background {max-width:none !important;}
+
+
+.inner-body-wrap-a-dapper {background: url("/++theme++tuttatk/img/white-box-tall-respo.png") repeat-x scroll 0 209px transparent;}
+.utility-div {min-height:40px;}
+.template-content {padding-top:25px;min-height:500px;}
+.min-content-height{min-height:500px;}
+.du-respo-logo-top {min-height:25px;}
+input[type="text"] {box-shadow:none;}
+input[type="text"]:focus {box-shadow:none;}
+.du-respo-logo {min-height:159px;padding-left:10px;}
+div#main-nav {margin-top:10px;width:auto;}
+div#main-nav ul {margin:0px}
+div#right-bug {}
+div#right-bug p a.give-max{font-size:115%;line-height:1.3em;}
+div#right-bug a.give-min {visibility:hidden;}
+.navbar-inner {background:none;background-color: #ffb81d;background-image: none;background-repeat: none;border: 0px solid transparent;border-radius: 0;box-shadow: none;min-height: 40px;padding-left: 0;padding-right: 0;filter: none;}
+.navbar .nav > li.standard {background: url("/++theme++tuttatk/img/white-pipe.png") no-repeat right 15px ;}
+.navbar .nav > li.last {background: url("/++theme++tuttatk/img/white-pipe.png") no-repeat left 15px ;}
+.navbar .nav > li.commons {background: url("/++theme++tuttatk/img/burst-ball-yellow15.png") no-repeat scroll right 12px transparent;}
+.navbar .nav > li > a {color:white;text-shadow:none;font-family: 'Open Sans Condensed', sans-serif;font-weight: 400;padding:9px 20px 10px 15px;}
+.navbar .nav > li > a:hover {color:white;}
+.navbar .btn-navbar {background-color: #ffb81d;background-image: none;background-repeat: repeat-x;border-color: #f9d689;color: #fbc654;float: right;margin-left: 5px;margin-right: 10px;margin-top:6px;padding: 3px 15px 3px 15px;}
+.navbar .btn-navbar .icon-bar {background-color: #F5F5F5;border-radius: 1px 1px 1px 1px;box-shadow: 0 1px 0 #fbc654;display: block;height: 2px;width: 18px;}
+.navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {color: #ffffff;background-color: #ffb003;*background-color: #ffb003;}
+div#the-commons div.column ul li {line-height:0.95em;}
+div#main-nav-mobile .navbar {margin-bottom:0;padding:8px 0 8px 0;}
+div#main-nav-mobile .navbar .navbar-inner-du-mobile {}
+.navbar-inner-du-mobile {background-color: #fff;background-image: none;background-repeat: none;border: 0px solid transparent;border-radius: 0;box-shadow: none;padding-left: 0;padding-right: 0;}
+.navbar-inner-du-mobile .nav > li > a {font-family: 'Open Sans Condensed', sans-serif;color: #98A4AF;font-style: oblique;font-weight: 700;letter-spacing: 0.1em;padding: 5px 8px 0 8px;text-shadow: none;font-size:13px;}
+.navbar-inner-du-mobile .nav > li > a:hover {color: #666;}
+.mzr-responsive > li.mzr-drop {background: none;}
+.meganizr > li > div, .meganizr > li > ul, .meganizr > li > ul li > ul {background-color: #003a70;background: url("/++theme++tuttatk/img/transparencies/images/transpDuBlue90.png") repeat scroll 0 0 transparent;border: 0px solid #003a70;border-radius: 3px 3px 3px 3px;box-shadow: none;left: -1px;opacity: 0;overflow: hidden;padding: 2px 0;position: absolute;top: 37px;visibility: hidden;z-index: 600;}
+.meganizr > li {border-right: 0px dotted #fff;}
+.meganizr > li.mzr-full-width a:hover {color:#98A4AF;}
+.meganizr > li > a {font-family: 'Open Sans Condensed', sans-serif;color:#98A4AF;font-style: italic;font-weight:700;text-shadow:none;text-transform: uppercase;font-size:17px;padding: 3px 8px 0 8px;
+}/*letter-spacing:0.1em;font-style:oblique; */
+.mzr-content h3 {margin:2px 0;}
+.mzr-content h3 a {font-family:'LeagueGothicCyrillic',sans-serif;font-weight: 400;color: #ffb81d;}
+.mzr-content .mzr-links a {border-bottom: 1px dotted #98A4AF;line-height: 17px;padding: 3px 0;}
+.mzr-content a {color: #fff;}
+.mzr-content a:hover {background-color: none;background: none !important;color:#98A4AF;}
+a.mzr-close {background-image:url(/++theme++tuttatk/img/tools/close-du-blue.png);position:absolute;right:10px;top:9px;cursor:pointer;height:35px;width:35px;}
+.marquee_photo {height:350px;}
+/*This is an over-ride for bootstrap to allow plone's pseudo "invisible" table class */
+table.invisible {visibility:visible;}
+.footer-images {text-align:center;}
+/************************** Custom Responsive Styles **************************/
+/* Large desktop */
+@media (min-width: 1200px) {
+    .span2.footer {margin-left:0px;width:190px;}
+    .span2.footer.wide {margin-left:0px;width:250px;}
+	.meganizr .one-point-five-col {width: 20%;}
+	.deco-spacer {height: 24px;}
+}
+/* Intermediate size */
+@media (max-width: 1199px) {
+	.du-respo-logo {padding-left:0;}
+	.navbar .nav {margin-right:5px;}
+	.navbar .nav > li.standard > a {padding: 10px 4px;}
+	.navbar .nav > li.commons> a {padding: 10px 10px 10px 5px;}
+	.meganizr > li > a {font-size:14px;padding: 3px 3px 0 3px;}
+	div#right-bug p a.give-max{font-size:105%;}
+	.navbar .nav > li.last a {padding-left:10px;}
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.inner-body-wrap-a-dapper {background: url("/++theme++tuttatk/img/white-box-tall-respo.png") repeat-x scroll 0 165px transparent;}		
+	.du-respo-logo {min-height:115px;padding-left:0;}	
+	div#right-bug {width:44px;height:35px;float:right;padding-top:10px;background:none;background-color:#cedf00;text-align:center;}
+	div#right-bug p a.give-max{display:none;}
+	div#right-bug h3 {display:none;}
+	div#right-bug p a.give-min {visibility:visible;font-family: 'Open Sans Condensed', sans-serif;font-size:140%;color:#003a70;color:white;font-weight:400;letter-spacing:0.1em;line-height:1.2em;}
+	.meganizr {width:475px;}
+	.meganizr > li > a {font-size:13px;padding: 1px 1px 0 1px;}
+	.mzr-responsive {margin:0;}
+	.mzr-responsive > li, .mzr-responsive > li.mzr-align-right {width:auto;}
+	div#main-nav {margin-top: 10px;width: 540px;}
+	.navbar .nav {margin:0;}
+	.nav-collapse {background-color:#eee;z-index:600;}
+	.nav-collapse .nav li a {color:#003a70;}
+	.nav-collapse .nav li a:hover {background-color:#eee;color:#003a70;}
+	.navbar .nav > li.last a {padding-left: 10px;}
+	.nav-collapse .navbar-form, .nav-collapse .navbar-search {border-bottom: none;border-top: 1px solid #ccc;box-shadow: none;float: none;margin: 0px 0;padding: 5px 5px;}
+	.footer-images a img {width:21px;height:21px;}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body {background:none;padding-left:0;padding-right:0;}
+	body img.vegas-background {display:none !important;}
+	.inner-body-wrapper {background:none;}			
+	.inner-body-wrap-a-dapper {background:none;}
+	.logo {background-color:#003a70;text-align:center;padding:5px 0;}
+	div#right-bug {display:none;}
+	.meganizr > li > a {padding: 3px 5px 0 5px;}
+	.du-footer {min-height:1200px;}
+	.navbar .nav > li.du-last-mobile {background:none;}
+	.navbar-inner-du-mobile .nav > li > a {font-style:normal;}
+	.navbar .nav {margin:0;}
+	.navbar .utility-nav {margin-left:3px;}
+	.nav-collapse {background-color:#eee;z-index:600;}
+	.nav-collapse .nav li a {color:#003a70;}
+	.nav-collapse .nav li a:hover {background-color:#eee;color:#003a70;}
+	.navbar .nav > li.last {height: 25px;}
+	.navbar .nav > li.last a {padding-left:10px;height: 25px;}
+	.nav-collapse .navbar-form, .nav-collapse .navbar-search {border-bottom: none;border-top: 1px solid #ccc;box-shadow: none;float: none;margin: 0px 0;margin-top:-10px;padding: 5px 5px;}
+	dl.portlet, .portletNavigationTree {font-size:60%;}
+	dl.portlet ul.navTree li a {margin-left:10px;}
+	dl.portlet ul.navTree .navTreeCurrentItem {margin-left:10px;}
+	dl.portlet ul.navTree li.navTreeTopNode a {margin-left:0;}	
+	.template-content {padding-top: 5px;}
+	#content h1 {font-size:170%;}
+	#content h2 {font-size:125%;}
+	#content h3 {font-size:115%;}
+	#content h4 {font-size:110%;}
+	#content h5 {font-size:105%;}
+	#content h6 {font-size:100%;}	
+	.navbar-inner-du-mobile .container {padding-top:8px;padding-bottom:8px;}
+	.navbar-inner-du-mobile .nav {text-align:center;}
+	.navbar-inner-du-mobile .nav > li {float:none;display:inline-block;}
+	.navbar-inner-du-mobile .nav > li a {padding:2px 20px 2px 10px;}	
+	div#main-nav-mobile .navbar {margin-bottom:0;padding:0;}
+	div.main-content-top-bar {margin-top:-3px;}
+	div.template-content {padding-top:15px;}
+	#portal-breadcrumbs {margin:0;padding-bottom:8px;padding-left:15px;border-bottom:10px solid #003a70;}
+	#content{margin-left:10px;margin-right:10px;}
+	.footer-images a img {width:21px;height:21px;}
+} 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	body {background:none;padding-left:0;padding-right:0;}
+	body img.vegas-background {display:none !important;}
+	.inner-body-wrapper {background:none;}			
+	.inner-body-wrap-a-dapper {background:none;}
+	.logo {background-color:#003a70;text-align:center;padding:5px 0;}	
+	div#right-bug {display:none;}
+	.du-footer {min-height:1000px;}
+	.navbar .nav > li.du-last-mobile {background:none;}
+	/* collapse drop down */
+	.navbar .nav {margin:0;}
+	.navbar .utility-nav {margin-left:3px;}
+	.nav-collapse {background-color:#eee;z-index:600;}
+	.nav-collapse .nav li a {color:#003a70;}
+	.nav-collapse .nav li a:hover {background-color:#eee;color:#003a70;}
+	.navbar .nav > li.last a {padding-left: 10px;}
+	.nav-collapse .navbar-form, .nav-collapse .navbar-search {border-bottom: none;border-top: 1px solid #ccc;box-shadow: none;float: none; margin: 0px 0;margin-top:-10px;padding: 5px 5px;}
+	
+	.navbar-inner-du-mobile .nav {text-align:center;}
+	.navbar-inner-du-mobile .nav > li {float:none;display:inline-block;}
+	.navbar-inner-du-mobile .nav > li a {padding:2px 10px 2px 10px;}	
+	div#main-nav-mobile .navbar {margin-bottom:0;padding:0;}
+	div.main-content-top-bar {margin-top:-3px;}
+	div.template-content {padding-top:15px;}
+	#portal-breadcrumbs {margin:0;padding-bottom:8px;padding-left:15px;border-bottom:10px solid #003a70;}
+	#content{margin-left:10px;margin-right:10px;}
+	.footer-images a img {width:21px;height:21px;}
+}	
